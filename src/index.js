@@ -4,11 +4,9 @@ import './index.css';
 import App from './App';
 // import Router from './Router';
 // import 'antd/dist/antd.css';
-import Amplify from 'aws-amplify';
+import { Amplify } from 'aws-amplify';
 import config from './aws-exports';
 Amplify.configure(config);
-
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +15,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
