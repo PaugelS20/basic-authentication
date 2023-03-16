@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
-
 import Nav from "./Nav";
 import Public from "./Public";
-import Profile from "./Profile";
+import Profile from "./pages/Profile";
 import Protected from "./Protected";
 
 const Router = () => {
