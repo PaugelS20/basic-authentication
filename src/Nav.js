@@ -35,3 +35,4 @@ export const Nav = ({ current }) => {
 		</div>
 	);
 };
+export default Nav;
