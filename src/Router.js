@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
-import Nav from "./Nav";
+import { HashRouter, Route } from "react-router-dom";
+import {Nav} from "./Nav";
 import Public from "./Public";
 import Profile from "./pages/Profile";
 import Protected from "./Protected";
@@ -23,12 +23,12 @@ const Router = () => {
 	return (
 		<HashRouter>
 			<Nav current={current} />
-			<Routes>
+			<Route>
 				<Route exact path="/" component={Public} />
 				<Route exact path="/protected" component={Protected} />
 				<Route exact path="/profile" component={Profile} />
 				<Route component={Public} />
-			</Routes>
+			</Route>
 		</HashRouter>
 	);
 };
