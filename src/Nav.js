@@ -7,8 +7,7 @@ import {
     FileProtectOutlined 
 } from '@ant-design/icons';
 
-export const Nav = (props) => {
-  const { current } = props;
+export const Nav = ({current}) => {
   return (
     <div>
       <Menu selectedKeys={[current]} mode="horizontal">
