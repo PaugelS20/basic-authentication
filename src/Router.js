@@ -7,19 +7,19 @@ import Protected from "./Protected";
 
 const Router = () => {
 	const [current, setCurrent] = useState("home");
-	
-    useEffect(() => {
+
+	useEffect(() => {
 		setRoute();
 		window.addEventListener("hashchange", setRoute);
 		return () => window.removeEventListener("hashchange", setRoute);
 	}, []);
-	
-    const setRoute = () => {
+
+	const setRoute = () => {
 		const location = window.location.href.split("/");
 		const pathname = location[location.length - 1];
 		setCurrent(pathname ? pathname : "home");
 	};
-    
+
 	return (
 		<HashRouter>
 			<Nav current={current} />
