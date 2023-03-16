@@ -16,7 +16,7 @@ const Profile = () => {
 			const userInfo = { username: data.username, ...data.attributes };
 			setUser(userInfo);
 		} catch (err) {
-			console.err("error: ", err);
+			console.error("error: ", err);
 		}
 	};
 	return (
