@@ -24,13 +24,12 @@ const Router = () => {
 		<HashRouter>
 			<Nav current={current} />
 			<Routes>
-				<Route exact path="/" element= {<Public/>} />
-				<Route exact path="/protected" element={<Protected/>} />
-				<Route exact path="/profile" element={<Profile/>} />
-				<Route element={<Public/>}/>
+				<Route exact path="/" element={<Public />} />
+				<Route exact path="/protected" element={<Protected />} />
+				<Route exact path="/profile" element={<Profile />} />
+				<Route element={<Public />} />
 			</Routes>
 		</HashRouter>
 	);
 };
-
 export default Router;
