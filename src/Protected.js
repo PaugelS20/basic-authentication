@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Auth } from "aws-amplify";
-import { Container } from "./Container";
+import Container from "./Container";
 
-export const Protected = ({ history }) => {
+const Protected = ({ history }) => {
 	useEffect(() => {
 		Auth.currentAuthenticatedUser()
 			.then(() => {
@@ -19,3 +19,4 @@ export const Protected = ({ history }) => {
 		</Container>
 	);
 };
+export default Protected;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Container = ({ children }) => (
+const Container = ({ children }) => (
   <div style={styles.container}>
     { children }
   </div>
