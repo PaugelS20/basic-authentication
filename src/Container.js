@@ -1,6 +1,6 @@
 import React from 'react';
 
-// children will be removed in the next major upadte of ant design neet to change to items somhow
+// children will be removed in the next major upadte of ant design neet to change to items somehow
 const Container = ({ children }) => (
   <div style={styles.container}>
     { children }
