@@ -6,7 +6,7 @@ import Profile from "./Profile";
 import Protected from "./Protected";
 
 const Router = () => {
-	const [current, setCurrent] = useState("home");
+	const [current, setCurrent] = useState("/");
 
 	useEffect(() => {
 		setRoute();
@@ -17,7 +17,7 @@ const Router = () => {
 	const setRoute = () => {
 		const location = window.location.href.split("/");
 		const pathname = location[location.length - 1];
-		setCurrent(pathname ? pathname : "home");
+		setCurrent(pathname ? pathname : "/");
 	};
 
 	return (
