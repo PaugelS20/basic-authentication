@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import Public from "./Public";
 import Profile from "./Profile";
 import Protected from "./Protected";
+import { StarWarsPublic } from "./StarWarsPublic";
 
 const Router = () => {
 	const [current, setCurrent] = useState("/");
@@ -27,6 +28,7 @@ const Router = () => {
 				<Route exact path="/" element={<Public />} />
 				<Route exact path="/protected" element={<Protected />} />
 				<Route exact path="/profile" element={<Profile />} />
+				<Route exact path="/starwarspublic" element={<StarWarsPublic />} />
 				<Route element={<Public />} />
 			</Routes>
 		</HashRouter>

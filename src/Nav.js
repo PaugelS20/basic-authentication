@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { Menu } from "antd";
 import {
 	HomeOutlined,
-	ProfileOutlined,
+	// ProfileOutlined,
 	FileProtectOutlined,
-	UserOutlined
+	UserOutlined,
+	RocketOutlined
 } from "@ant-design/icons";
 
 const Nav = () => {
@@ -26,9 +27,9 @@ const Nav = () => {
 			icon: <FileProtectOutlined />,
 		},
 		{
-			label: <Link to={`/morepublic`}>More Public</Link>,
-			key: "morepublic",
-			icon: <ProfileOutlined />,
+			label: <Link to={`/starwarspublic`}>Star Wars Public</Link>,
+			key: "starwarspublic",
+			icon: <RocketOutlined />,
 		},
 	];
 
