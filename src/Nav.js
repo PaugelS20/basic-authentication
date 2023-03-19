@@ -5,6 +5,7 @@ import {
 	HomeOutlined,
 	ProfileOutlined,
 	FileProtectOutlined,
+	UserOutlined
 } from "@ant-design/icons";
 
 const Nav = () => {
@@ -17,12 +18,17 @@ const Nav = () => {
 		{
 			label: <Link to={`/profile`}>Profile</Link>,
 			key: "profile",
-			icon: <ProfileOutlined />,
+			icon: <UserOutlined />, /*<ProfileOutlined />*/
 		},
 		{
 			label: <Link to={`/protected`}>Protected</Link>,
 			key: "protected",
 			icon: <FileProtectOutlined />,
+		},
+		{
+			label: <Link to={`/morepublic`}>More Public</Link>,
+			key: "morepublic",
+			icon: <ProfileOutlined />,
 		},
 	];
 
